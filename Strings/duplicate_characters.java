@@ -2,7 +2,6 @@
 import java.util.*;
 
 class Solution {
-
 	static void printDuplicate(String str) {
 		HashMap<Character, Integer> count = new HashMap<>();
 		for (int i = 0; i < str.length(); i++) {
@@ -12,7 +11,6 @@ class Solution {
 				count.put(str.charAt(i),
 						count.get(str.charAt(i)) + 1);
 		}
-
 		for (Map.Entry mapElement : count.entrySet()) {
 			char key = (char)mapElement.getKey();
 			int value = ((int)mapElement.getValue());
