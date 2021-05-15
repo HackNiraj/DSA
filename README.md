@@ -1,5 +1,18 @@
 # DSA
 
+
+=============================================================================
+15th May 2021
+Completed Questions
+=============================================================================
+String
+1. Check Balanced Paranthesis.
+2. Check a string is Palindrome or not.
+3. Check weather one string is valid shuffle of other string or not.
+4. To print all the duplicate characters in the string.
+5. Reverse a string.
+6. To check both strings are rotation of each other.
+
 =============================================================================
 14th May 2021
 Completed Questions
