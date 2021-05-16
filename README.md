@@ -2,6 +2,20 @@
 
 
 =============================================================================
+16th May 2021
+Completed Questions
+=============================================================================
+String
+1. Count and say Problem.
+
+Sorting and Searching
+2. Find first and last positions of an element in a sorted array.
+3. Find a Fixed Point (Value equal to index) in a given array.
+4. Search in a rotated sorted array.
+5. Square root of an integer.
+6. Maximum and minimum of an array using minimum number of comparisons.
+
+=============================================================================
 15th May 2021
 Completed Questions
 =============================================================================
