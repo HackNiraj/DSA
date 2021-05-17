@@ -1,5 +1,18 @@
 # DSA
 
+=============================================================================
+17th May 2021
+Completed Questions
+=============================================================================
+Sorting and Searching
+
+1. Find the repeating and the missing.
+2. Find majority element.
+3. Searching in an array where adjacent differ by at most k 
+4. Find a pair with a given difference.
+5. Find four elements that sum to a given value.
+6. Find maximum sum such that no 2 elements are adjacent.
+7. merge two sorted arrays without any extra space.
 
 =============================================================================
 16th May 2021

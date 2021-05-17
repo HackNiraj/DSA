@@ -1,6 +1,5 @@
 public class Solution
 {
-    //Function to find the maximum money the thief can get.
     int findMaxSum(int arr[], int n) {
         int incl = arr[0];
         int excl = 0;
