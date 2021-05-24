@@ -5,8 +5,8 @@ class Solution {
         arr[r] = temp;
     }
 
-    # method 1
-    static void rearrangeNegativePositive(int arr[]) {
+    // method 1
+    static void rearrangeArrayMethod1(int arr[]) {
         int i = 0, j = 0;
         while(i < arr.length) {
             if(arr[i] < 0) {
@@ -18,8 +18,8 @@ class Solution {
         }
     } 
     
-    # method 2
-    static void rearrangeNegativePositive(int arr[]) {
+    // method 2
+    static void rearrangeArrayMethod2(int arr[]) {
         int i = 0, j = arr.length - 1;
         while(i <= j) {
             if(arr[i] < 0 && arr[j] < 0)
@@ -37,7 +37,8 @@ class Solution {
 
     public static void main(String args[]) {
         int arr[] = { -1, 2, -3, 4, 5, 6, -7, 8, 9 };
-        rearrangeNegativePositive(arr);
+        rearrangeArrayMethod1(arr);
+        // rearrangeArrayMethod2(arr);
         for(int value: arr) {
             System.out.print(value + " ");
         }

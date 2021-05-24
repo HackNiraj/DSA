@@ -1,7 +1,7 @@
 class Solution {
     static int kadanesAlgo(int arr[]) {
         int max = Integer.MIN_VALUE, sum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
             if(sum > max) {
                 max = sum;

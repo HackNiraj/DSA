@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 class Solution {
-	static int getPairsCount(int n, int sum) {
+	static int getPairsCount(int arr[], int n, int sum) {
 		HashMap<Integer, Integer> mymap = new HashMap<>();
 		for (int i = 0; i < n; i++) {
 			if (!mymap.containsKey(arr[i]))
@@ -24,6 +24,6 @@ class Solution {
 	public static void main(String[] args) {
         int arr[] = new int[] { 1, 5, 7, -1, 5 };
 		int sum = 6;
-		System.out.println("Count of pairs is " + getPairsCount(arr.length, sum));
+		System.out.println("Count of pairs is " + getPairsCount(arr, arr.length, sum));
 	}
 }
