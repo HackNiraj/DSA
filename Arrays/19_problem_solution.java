@@ -1,40 +1,28 @@
+import java.util.ArrayList;
+
 class Solution {
-
-    static String calculateFactorial(int x) {
-        int arr[] = new int[2000000];
-        arr[0] = 1;
-        int arr_size = 1;
-        for(int i = 2; i <= x; i++) {
-            arr_size = multiply(arr, i, arr_size);
+    static ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) {
+        // code here 
+        ArrayList<Integer> lst = new ArrayList<Integer>();
+        int i = 0, j = 0, k = 0;
+        while(i < n1 && j < n2 && k < n3) {
+            if(A[i] == B[j] && B[j] == C[k]) {
+                if(!lst.contains(A[i]))
+                    lst.add(A[i]);
+                i++; j++; k++;
+            } else if(A[i] < B[j]) i++;
+            else if(B[j] < C[k]) j++;
+            else k++;
         }
-
-        String res = "";
-        int i = arr_size - 1;
-        while(i >= 0) {
-            res += arr[i];
-            i--;
-        }
-        return res;
-    }
-
-    static int multiply(int arr[], int x, int res) {
-        int prod = 0, carry = 0;
-        for(int i = 0; i < res; i++) {
-            prod = (arr[i] * x) + carry;
-            arr[i] = prod % 10;
-            carry = prod / 10;
-        }
-
-        while(carry != 0) {
-            arr[res] = carry % 10;
-            carry = carry / 10;
-            res++;
-        }
-        return res;
+        return lst;
     }
 
     public static void main(String args[]) {
-        int x = 100;
-        System.out.print(calculateFactorial(x));
+        int A[] = {1, 5, 10, 20, 40, 80};
+        int B[] = {6, 7, 20, 80, 100};
+        int C[] = {3, 4, 15, 20, 30, 70, 80, 120};
+        for(Integer x: commonElements(A, B, C, A.length, B.length, C.length)) {
+            System.out.print(x+ " ");
+        }
     }
 }

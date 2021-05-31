@@ -1,31 +1,61 @@
-import java.util.*;
-
 class Solution {
-    static int[][] merge(int[][] intervals) {
-        if (intervals.length <= 1)
-			return intervals;
-		// Sort by ascending starting point
-		Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
-		List<int[]> result = new ArrayList<>();
-		int[] newInterval = intervals[0];
-		result.add(newInterval);
-		for (int[] interval : intervals) {
-			if (interval[0] <= newInterval[1])
-				newInterval[1] = Math.max(newInterval[1], interval[1]);
-			else {
-				newInterval = interval;
-				result.add(newInterval);
-			}
-		}
-		return result.toArray(new int[result.size()][]);
+    
+    static long merge(long arr[], int l, int m, int r) {
+        long inversions = 0;
+        int left = m - l + 1;
+        int right = r - m;
+        long L[] = new long[left];
+        long R[] = new long[right];
+        int i = 0, j = 0, k = l;
+        for(i = 0; i < left; i++) {
+            L[i] = arr[i+k];
+        }
+        for(j = 0; j < right; j++) {
+            R[j] = arr[m + 1 + j];
+        }
+        i = 0; j = 0;
+        while(i < left && j < right) {
+            if(L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            } else {
+                arr[k] = R[j];
+                j++;
+                inversions += (left - i);
+            }
+            k++;
+        }
+        while(i < left) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+        while(j < right) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+        return inversions;
+    }
+    
+    static long mergeSort(long arr[], int l, int r) {
+        long inversions = 0;
+        if(l < r) {
+            int mid = (l + r) / 2;
+            inversions += mergeSort(arr, l, mid);
+            inversions += mergeSort(arr, mid+1, r);
+            inversions += merge(arr, l, mid, r);
+        }
+        return inversions;
+    }
+    
+    static long inversionCount(long arr[], long N) {
+        return mergeSort(arr, 0, (int)N-1);
     }
 
     public static void main(String args[]) {
-        int intervals[][] = {{1,3},{2,6},{8,10},{15,18}};
-        System.out.println('[');
-        for(int[] x : merge(intervals)) {
-            System.out.println('[' + x[0] + " , " + x[1] + ']');
-        }
-        System.out.println(']');
+        long N = 5;
+        long arr[] = {2, 4, 1, 3, 5};
+        System.out.print(inversionCount(arr, N));
     }
 }
