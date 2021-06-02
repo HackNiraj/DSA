@@ -1,6 +1,5 @@
-class Solution {
-    void spirallyTraverse(int[][] matrix, int r, int c) 
-    {
+class SpiralTraverseMatrix {
+    static void spirallyTraverse(int[][] matrix, int r, int c) {
         // code here
         int i = 0, j = 0;
         while(i < r && j < c) {
@@ -28,11 +27,10 @@ class Solution {
     }
 
     public static void main(String args[]) {
-        int a[][] = { { 1, 2, 3, 4 },
-                      { 5, 6, 7, 8 },
-                      { 9, 10, 11, 12 },
-                      { 13, 14, 15, 16 } };
-
-        spirallyTraverse(a);
+        int a[][] = {{ 1, 2, 3, 4 },
+                     { 5, 6, 7, 8 },
+                     { 9, 10, 11, 12 },
+                     { 13, 14, 15, 16 }};
+        spirallyTraverse(a, a.length, a[0].length);
     }
 }

@@ -1,4 +1,4 @@
-class Solution {
+class CheckArrayElementPalindrome {
     boolean checkPalindrome(int x) {
         String str = x + "";
         for(int i = 0, j = str.length() - 1; i < j; i++) {
@@ -16,7 +16,7 @@ class Solution {
     }
 
     public static void main(String args[]) {
-        Solution obj = new Solution();
+        CheckArrayElementPalindrome obj = new CheckArrayElementPalindrome();
         int arr[] = {111, 222, 333, 444, 555};
         System.out.print(obj.arrayElementsCheck(arr));
     }

@@ -1,4 +1,4 @@
-class Solution {
+class LargestSumInSubarray {
     // another approach is Kadanes algorithm
     static int largestSubarraySum(int arr[]) {
         int max = Integer.MIN_VALUE, curr = 0;

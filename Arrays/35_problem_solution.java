@@ -1,4 +1,4 @@
-public class Solution {
+class MedianForSortedSameLengthArray {
     // method 1
     static int getMedian(int arr1[], int arr2[]) {
         int i = 0, j = 0, m1 = 0, m2 = 0;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class CountOccurances {
     public int countOccurence(int[] arr, int n, int k) {
         HashMap<Integer, Integer> mymap = new HashMap<Integer, Integer>();
         for(int x: arr) {
@@ -22,6 +22,6 @@ class Solution {
     public static void main(String[] args) {
         int arr[] = {3,1,2,2,1,2,3,3};
         int n = 8, k = 4;
-        System.out.println(new Solution().countOccurence(arr, n, k));
+        System.out.println(new CountOccurances().countOccurence(arr, n, k));
     }
 }

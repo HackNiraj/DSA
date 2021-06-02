@@ -1,4 +1,4 @@
-class Solution {
+class FactorialCalculation {
 
     static String calculateFactorial(int x) {
         int arr[] = new int[2000000];

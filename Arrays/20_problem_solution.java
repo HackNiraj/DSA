@@ -1,4 +1,4 @@
-class Solution {
+class AlternateNegativePositive {
     
     static void swap(int arr[], int i, int j) {
         int temp = arr[i];

@@ -1,4 +1,4 @@
-public class Solution {
+class MedianForSortedDiffLengthArray {
     
     static int getMedian(int arr1[], int arr2[]) {
         int i = 0, j = 0, m1 = 0, m2 = 0, val = arr1.length + arr2.length;

@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
-class Solution {
-    static boolean findSum(int arr[],int n) {
+class SubarraySumZero {
+    static boolean isSubarraySumZero(int arr[],int n) {
         int i = 0, sum = 0;
         HashSet<Integer> mySet = new HashSet<Integer>();
         while(i < n) {
@@ -17,6 +17,6 @@ class Solution {
 
     public static void main(String args[]) {
         int arr[] = {4, 2, -3, 1, 6};
-        System.out.print(findSum(arr, arr.length));
+        System.out.print(isSubarraySumZero(arr, arr.length));
     }
 }

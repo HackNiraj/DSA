@@ -1,4 +1,4 @@
-class Solution {
+class ReverseArray {
     static void reverseArr(int arr[]) {
         int i = 0, j = arr.length - 1;
         int temp = 0;

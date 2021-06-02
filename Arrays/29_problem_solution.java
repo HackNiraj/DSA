@@ -1,4 +1,4 @@
-class Solution {  
+class TotalWaterStorage {  
     
     int storedWater(int arr[]) {
         int n = arr.length, water = 0;
@@ -20,7 +20,7 @@ class Solution {
     }
     
     public static void main(String args[]){  
-        Solution obj = new Solution();
+        TotalWaterStorage obj = new TotalWaterStorage();
         int arr[] = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
         System.out.println(obj.storedWater(arr));
     }  

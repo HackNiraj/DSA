@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class GetDifferenceInHeights {
 
     static int getMinDiff(int[] arr, int n, int k) {
         Arrays.sort(arr);

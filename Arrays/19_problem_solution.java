@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Solution {
+class CommonElements {
     static ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) {
         // code here 
         ArrayList<Integer> lst = new ArrayList<Integer>();

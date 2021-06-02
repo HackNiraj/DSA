@@ -1,4 +1,4 @@
-class solution {
+class MinimumJumpsToReachEnd {
     static int minJumps(int[] arr){
         int size = arr.length;
         if (size <= 1)

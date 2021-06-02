@@ -1,4 +1,4 @@
-class Solution {
+class BestTimeToBuyShares {
     // method 1 using kadane's algo 
     // static  int maxProfit(int[] prices) {
     //     int curr = 0, profit = 0;

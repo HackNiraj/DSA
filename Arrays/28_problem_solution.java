@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution{
+class CheckThreeNumberSum {
     static boolean find3Numbers(int arr[], int n, int X) { 
         Arrays.sort(arr);
         for(int i = 0; i < n - 2; i++) {

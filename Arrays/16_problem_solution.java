@@ -1,4 +1,4 @@
-class Solution {
+class InversionCountInArray {
     
     static long merge(long arr[], int l, int m, int r) {
         long inversions = 0;

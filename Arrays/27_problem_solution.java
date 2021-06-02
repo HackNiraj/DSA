@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-class Solution {
+class CheckSubsetOfArray {
     static String isSubset(int arr1[], int arr2[], int m, int n) {
         HashSet<Integer> hset = new HashSet<>();
         for (int i = 0; i < m; i++)

@@ -1,4 +1,4 @@
-class Solution {
+class MaximumProfitByShares {
 	public static void main(String[] args) {
 		int price[] = { 2, 30, 15, 10, 8, 25, 80 };
 		int profit = 0;

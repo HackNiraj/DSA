@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class UnionOfTwoUnsortedArrays {
 
     static int doUnion(int a[], int b[])  {
         //code here

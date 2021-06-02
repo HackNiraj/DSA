@@ -1,4 +1,4 @@
-class Solution {
+class MaximumProductSubarray {
 
     static int maxProduct(int arr[], int n) {
         int minVal = arr[0];
@@ -10,7 +10,6 @@ class Solution {
                 int temp = maxVal;
                 maxVal = minVal;
                 minVal =temp;
-            
             }
     
             maxVal = Math.max(arr[i], maxVal * arr[i]);

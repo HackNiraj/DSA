@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class ChoclateDistribution {
     static long findMinDiff(long arr[], long m) {
         if(m == 0 || arr.length == 0) return 0;
         if(arr.length < m) return -1;

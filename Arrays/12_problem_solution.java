@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
-class Solution {
+class InplaceMergeTwoArrays {
 
     static void merge(int arr1[], int arr2[], int n, int m) {
-        int i = 0, j = 0, h = n - 1;
+        int j = 0, h = n - 1;
 	    int temp = 0;
 	    while(h >= 0 && j < m) {
 	        if(arr2[j] < arr1[h]) {

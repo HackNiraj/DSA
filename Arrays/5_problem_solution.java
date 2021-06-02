@@ -1,4 +1,4 @@
-class Solution {
+class ShiftingAllNegativesToStart {
     static void swap(int arr[], int l, int r) {
         int temp = arr[l];
         arr[l] = arr[r];

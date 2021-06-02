@@ -1,4 +1,4 @@
-class Solution {
+class MinMaxInArray {
     static int[] findMinMax(int arr[]) {
         int min_ele = Integer.MAX_VALUE, max_ele = Integer.MIN_VALUE;
         int i = 0;

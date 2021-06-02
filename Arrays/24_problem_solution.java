@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class LongestSubsequenceIntegers {
     static int findLongestConseqSubseq(int arr[], int n) {
         HashSet<Integer> S = new HashSet<Integer>();
         int ans = 0;

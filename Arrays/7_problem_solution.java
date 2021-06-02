@@ -1,4 +1,4 @@
-class Solution {
+class RotateArrayByOnePosition {
     static void rotateByOne(int arr[]) {
         int i = arr.length-1;
         int temp = arr[i];

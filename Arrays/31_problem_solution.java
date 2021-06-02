@@ -1,4 +1,4 @@
-class Solution {
+class SmallSubarraySumGreaterThanX {
     static long subArr(long arr[], long n, long x) {
         // Your code goes here 
         long min = n+1, sum = 0;

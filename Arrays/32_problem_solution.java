@@ -1,4 +1,4 @@
-class Solution {
+class ThreeWayPartition {
     static void threeWayPartition(int arr[], int a, int b) {
         int n = arr.length;
         int i = 0, j = n - 1, k = 0;
